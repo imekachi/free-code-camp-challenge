@@ -65,8 +65,8 @@ function checkCashRegister(priceDollars, cashDollars, drawerDollars) {
  * @param {number} amount
  * @param {CashItemList} drawer
  * @returns {{
- *   pickedCash: CashItemList
- *   updatedDrawer: CashItemList
+ *   pickedCash: CashItemList,
+ *   updatedDrawer: CashItemList,
  * }}
  * @throws {Error}
  */
@@ -110,14 +110,14 @@ function pickCashFromDrawer(amount, drawer) {
 /**
  *
  * @param {{
- *   cashType: CashType
- *   cashValue: number
- *   targetValue: number
+ *   cashType: CashType,
+ *   cashValue: number,
+ *   targetValue: number,
  * }} params
  * @returns {{
- *   pickedCashValue: number
- *   cashValueLeft: number
- *   targetValueLeft: number
+ *   pickedCashValue: number,
+ *   cashValueLeft: number,
+ *   targetValueLeft: number,
  * }}
  */
 function pickCash({ cashType, cashValue, targetValue }) {
@@ -175,9 +175,9 @@ function sortCashInDrawerByType(drawer) {
  * @param {number} a
  * @param {number} b
  * @returns {{
- *   resultInt: number
- *   fraction: number
- *   dividedValue: number
+ *   resultInt: number,
+ *   fraction: number,
+ *   dividedValue: number,
  * }}
  */
 function intDivided(a, b) {
